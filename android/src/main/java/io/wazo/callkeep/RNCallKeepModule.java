@@ -527,7 +527,7 @@ public class RNCallKeepModule extends ReactContextBaseJavaModule {
             }
             permissionsIndex++;
         }
-        hasPhoneAccountPromise.resolve(true);
+        hasPhoneAccountPromise.resolve(!hasPhoneAccount());
     }
 
     private class VoiceBroadcastReceiver extends BroadcastReceiver {
